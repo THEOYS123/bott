@@ -1,9 +1,0 @@
-Flask
-pyTelegramBotAPI
-phonenumbers
-requests
-Jinja2
-aiohttp
-python-dotenv  
-twilio         
-Telethon       
