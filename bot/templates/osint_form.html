@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="mb-4">OSINT Analysis Tool</h1>
+<p class="text-muted">Masukkan nomor telepon dengan kode negara (contoh: +6281234567890) untuk memulai analisis.</p>
+<div class="card">
+    <div class="card-body">
+        <form method="POST" action="{{ url_for('web.osint_form') }}">
+            <div class="mb-3">
+                <label for="phone" class="form-label">Nomor Telepon Target</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-phone"></i></span>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="+62..." required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">
+                <i class="bi bi-search"></i> Lakukan Analisis
+            </button>
+        </form>
+    </div>
+</div>
+{% endblock %}
