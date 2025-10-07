@@ -1,4 +1,4 @@
-# penggunaan termux
+# penggunaan termux (rekomendasi) 
 ```
 pip3 install -r requirements.txt
 ```
@@ -9,7 +9,7 @@ python main.py
 ```
 ---
 
-# proot-distro
+# proot-distro (non rekomendasi) 
 ```
 pip3 install -r requirements.txt
 ```
@@ -25,9 +25,6 @@ Atau
 ```
 python3 -m main.py
 ```
-
---- 
-
 # Warning!! 
 Bot ini masih dalam tahap pengembangan, jadi belum 100℅ akurat.  note: saya tidak bertanggung jawab apabila di gunakan untuk di salah gunakan. 
 
