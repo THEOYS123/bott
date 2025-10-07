@@ -18,6 +18,7 @@ lalu _nano config.py_  masukan token bot TELEGRAM kalian.
 ```
 python3 main.py
 ```
+atau
 ```
 python3 -m main
 ```
