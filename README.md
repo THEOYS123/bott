@@ -29,4 +29,9 @@ python3 -m main.py
 # Warning!! 
 Bot ini masih dalam tahap pengembangan, jadi belum 100℅ akurat.  note: saya tidak bertanggung jawab apabila di gunakan untuk di salah gunakan. 
 
-Script error? 
+Script error? contact saya. 
+
+> my website:
+
+ngoprek.xyz
+ngoprek.xyz/contact
