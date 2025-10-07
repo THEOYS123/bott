@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 class="mb-4 text-warning">Dashboard</h1>
+<p class="lead text-muted mb-5">Selamat datang di Control Panel REN-XPLOIT. Kelola semua alat dari satu tempat.</p>
+
+<div class="row">
+    <div class="col-lg-4 mb-4">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <i class="bi bi-robot fs-1 text-success"></i>
+                <h5 class="card-title mt-3">Bot Status</h5>
+                <p class="card-text">Status Bot Telegram saat ini.</p>
+                {% if get_bot_status() %}
+                    <p class="fs-4 text-success fw-bold"><i class="bi bi-check-circle-fill"></i> Online</p>
+                {% else %}
+                    <p class="fs-4 text-danger fw-bold"><i class="bi bi-x-circle-fill"></i> Offline</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <i class="bi bi-telephone-forward-fill fs-1 text-primary"></i>
+                <h5 class="card-title mt-3">OSINT Analysis</h5>
+                <p class="card-text">Lakukan analisis mendalam pada nomor telepon target.</p>
+                <a href="{{ url_for('web.osint_form') }}" class="btn btn-primary mt-2">Mulai Analisis</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 mb-4">
+        <div class="card text-center h-100">
+            <div class="card-body">
+                <i class="bi bi-sliders fs-1 text-warning"></i>
+                <h5 class="card-title mt-3">Configuration</h5>
+                <p class="card-text">Atur token bot dan parameter sistem lainnya.</p>
+                <a href="{{ url_for('web.settings') }}" class="btn btn-secondary mt-2">Buka Pengaturan</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
